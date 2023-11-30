@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { IResponseData, ISector } from "../types";
-import { api } from "../constants";
+import { BASE_URL, api } from "../constants";
 
 interface IProps {
 	id: string;
@@ -11,7 +11,7 @@ function useGetEntryById({ id }: IProps) {
 
 	const getEntryById = useCallback(async (): Promise<void> => {
 		try {
-			const url = `${process.env.VITE_BASE_URL}/${id}`;
+			const url = `${BASE_URL}/${id}`;
 			const {
 				status,
 				data: { message, data },

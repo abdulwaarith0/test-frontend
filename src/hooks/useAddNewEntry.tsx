@@ -1,12 +1,12 @@
 import { useCallback } from "react";
 import { IResponseData, ISector } from "../types";
-import { api } from "../constants";
+import { BASE_URL, api } from "../constants";
 
 function useAddNewEntry() {
 	const addNewEntry = useCallback(
 		async (payload: ISector): Promise<ISector | null> => {
 			try {
-				const url = `${process.env.VITE_BASE_URL}/`;
+				const url = `${BASE_URL}/`;
 				const {
 					status,
 					data: { message, data },

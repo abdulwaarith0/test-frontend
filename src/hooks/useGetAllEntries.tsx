@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
 import { IResponseData, ISector } from "../types";
-import { api } from "../constants";
+import { BASE_URL, api } from "../constants";
 
 const useGetAllEntries = () => {
 	const [allEntries, setAllEntries] = useState<ISector[]>([]);
 
 	const getAllEntries = useCallback(async (): Promise<void> => {
 		try {
-			const url = `${process.env.VITE_BASE_URL}/`;
+			const url = `${BASE_URL}/`;
 			const {
 				status,
 				data: { message, data },
