@@ -7,7 +7,7 @@ const useGetAllEntries = () => {
 
 	const getAllEntries = useCallback(async (): Promise<void> => {
 		try {
-			const url = `${process.env.VITE_BASE_URL}/api/`;
+			const url = `${process.env.VITE_BASE_URL}/`;
 			const {
 				status,
 				data: { message, data },

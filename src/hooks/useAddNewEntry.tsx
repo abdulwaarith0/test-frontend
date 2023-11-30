@@ -6,7 +6,7 @@ function useAddNewEntry() {
 	const addNewEntry = useCallback(
 		async (payload: ISector): Promise<ISector | null> => {
 			try {
-				const url = `${process.env.VITE_BASE_URL}/api/`;
+				const url = `${process.env.VITE_BASE_URL}/`;
 				const {
 					status,
 					data: { message, data },

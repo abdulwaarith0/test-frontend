@@ -11,7 +11,7 @@ function useGetEntryById({ id }: IProps) {
 
 	const getEntryById = useCallback(async (): Promise<void> => {
 		try {
-			const url = `${process.env.VITE_BASE_URL}/api/${id}`;
+			const url = `${process.env.VITE_BASE_URL}/${id}`;
 			const {
 				status,
 				data: { message, data },
