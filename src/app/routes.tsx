@@ -4,7 +4,7 @@ import { Home } from "../pages";
 const Routes = () => {
 	return (
 		<RoutesRouter>
-			<Route path="/api/" element={<Home />} />
+			<Route path="/" element={<Home />} />
 		</RoutesRouter>
 	);
 };
