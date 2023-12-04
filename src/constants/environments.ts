@@ -1,1 +1,1 @@
-export const BASE_URL = "https://test-server-wine-gamma.vercel.app/api"
+export const BASE_URL = "https://test-server-alpha-jade.vercel.app/";
