@@ -1,1 +1,1 @@
-export const BASE_URL = "http://localhost:8080/api";
+export const BASE_URL = "https://test-server-khaki.vercel.app/";
